@@ -1,0 +1,16 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "test server",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Den",
+  "license": "ISC",
+  "dependencies": {
+    "fastify": "^2.6.0",
+    "restify-plugins": "^1.6.0"
+  }
+}

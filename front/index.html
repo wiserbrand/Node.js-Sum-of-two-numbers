@@ -1,0 +1,18 @@
+<html ng-app="summApp">
+<head>
+  <script src="lib/angular/angular.min.js"></script>
+  <script src="js/controllers.js"></script>
+</head>
+<body >
+    <div ng-controller="SummCtrl as summDigits">
+        <form ng-submit="summDigits.sendData()">
+            <label for="one">First</label>
+            <input required type="number" string-to-number id="one" ng-model="summDigits.one">
+            <label for="two">Second</label>
+            <input required type="number" string-to-number id="two" ng-model="summDigits.two">
+            <input class="btn-primary" type="submit" ng-disabled="summDigits.sending" ng-value="summDigits.sending ? 'Sending':  'Calculate'">
+        </form>
+        <div ng-if="summDigits.resut">Resut: {{summDigits.resut}}</div>
+    </div>
+</body>
+</html>
